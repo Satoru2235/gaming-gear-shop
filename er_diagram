@@ -1,0 +1,8 @@
+digraph ER_Diagram {
+	rankdir=LR
+	Admin [label="{ Admin | id_admin | username | password | full_name | email | phone }" color=lightblue2 shape=record style=filled]
+	Customer [label="{ Customer | id_customer | username | password | full_name | email | address | phone }" color=lightgreen shape=record style=filled]
+	Product [label="{ Product | id_product | name | description | price | image | stock }" color=lightyellow shape=record style=filled]
+	Admin -> Product [label="1:n" arrowhead=crow arrowsize=1 arrowtail=none]
+	Admin -> Customer [label="1:n" arrowhead=crow arrowsize=1 arrowtail=none]
+}
